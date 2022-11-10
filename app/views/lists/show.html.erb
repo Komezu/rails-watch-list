@@ -6,8 +6,11 @@
       <strong><%= bookmark.movie.title %></strong><br>
       <em><%= bookmark.movie.overview %></em><br>
       Comment: <%= bookmark.comment %>
+      <%= link_to "Delete", bookmark_path(bookmark), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"} %>
     </li>
   <% end %>
 </ul>
+
+<%= link_to "Add a bookmark", new_list_bookmark_path(@list) %>
 
 <%= link_to "Back to index", lists_path %>

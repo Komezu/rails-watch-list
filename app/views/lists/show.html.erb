@@ -1,0 +1,13 @@
+<h3><%= @list.name %></h3>
+
+<ul>
+  <% @list.bookmarks.each do |bookmark| %>
+    <li>
+      <strong><%= bookmark.movie.title %></strong><br>
+      <em><%= bookmark.movie.overview %></em><br>
+      Comment: <%= bookmark.comment %>
+    </li>
+  <% end %>
+</ul>
+
+<%= link_to "Back to index", lists_path %>

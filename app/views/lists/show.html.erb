@@ -1,4 +1,4 @@
-<h3><%= @list.name %></h3>
+<h3><%= @list.name.capitalize %></h3>
 
 <ul>
   <% @list.bookmarks.each do |bookmark| %>
@@ -11,6 +11,10 @@
   <% end %>
 </ul>
 
-<%= link_to "Add a bookmark", new_list_bookmark_path(@list) %>
+<h4>Add a bookmark</h4>
+
+<%# link_to "Add a bookmark", new_list_bookmark_path(@list) %>
+
+<%= render "bookmarks/form", list: @list, bookmark: @bookmark %>
 
 <%= link_to "Back to index", lists_path %>

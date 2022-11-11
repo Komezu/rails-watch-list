@@ -13,10 +13,16 @@
     <% end %>
   </h2>
 
+  <% if @lists.empty? %>
+    <p class="empty-list-alert">No lists yet.</p>
+  <% end %>
+
   <div class="container-cards">
     <% @lists.each do |list| %>
       <%= link_to(list_path(list)) do %>
-        <div class="card-category"><%= list.name.capitalize %></div>
+        <div class="card-category" style="background-image:url(<%= cl_image_path(list.photo.key, height: 300, crop: :fill) %>)">
+          <%= list.name.capitalize %>
+        </div>
       <% end %>
     <% end %>
   </div>

@@ -6,7 +6,6 @@
 }
 
 .card-category {
-  background-image: url("https://source.unsplash.com/random/250x150");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -24,6 +23,6 @@
 
   &:hover {
     border: 2px solid $vint-yellow;
-    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("https://source.unsplash.com/random/250x150");
+    // background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3));
   }
 }

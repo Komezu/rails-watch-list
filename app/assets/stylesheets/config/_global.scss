@@ -1,17 +1,23 @@
 body {
-  background-color: rgba($vint-yellow, 0.5);
+  background-color: $body-background;
 }
 
 a {
   text-decoration: none;
 }
 
-h2, h3, h4 {
+h2, h3, h4, h5 {
   color: $black;
 }
 
 h2 {
   font-size: 26px;
+}
+
+h5 {
+  font-family: $body-font;
+  font-weight: bold;
+  font-style: italic;
 }
 
 hr {

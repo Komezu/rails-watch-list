@@ -1,1 +1,9 @@
-// Specific CSS for your home-page
+.icon-link {
+  color: inherit;
+  margin-left: 3px;
+  font-size: 24px;
+
+  &:hover {
+    color: $vint-brown;
+  }
+}

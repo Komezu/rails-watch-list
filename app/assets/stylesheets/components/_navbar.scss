@@ -10,3 +10,46 @@
 .navbar-lewagon .navbar-brand img {
   width: 40px;
 }
+
+.navbar-custom {
+  background-color: $vint-brown;
+  padding: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.3);
+
+  a {
+    color: $vint-yellow;
+    font-family: $headers-font;
+    font-style: italic;
+    font-size: 18px;
+  }
+
+  span {
+    margin-left: 8px;
+  }
+}
+
+.navbar-buttons {
+  a {
+    display: inline-block;
+    font-size: 15px;
+    font-style: normal;
+    margin-bottom: 1px;
+    margin-left: 20px;
+    border: 1px solid $vint-yellow;
+    border-radius: 4px;
+    padding: 3px 10px;
+    transition: 0.2s ease;
+  }
+
+  a:hover {
+    color: whitesmoke;
+    border-color: $vint-beige;
+    background-color: $vint-beige;
+  }
+}
+
+.navbar-spacer {
+  height: 51.5px;
+}

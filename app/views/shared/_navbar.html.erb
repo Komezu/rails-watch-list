@@ -1,0 +1,12 @@
+<nav class="navbar navbar-custom fixed-top">
+  <div class="container-fluid">
+    <%= link_to(root_path) do %>
+      The Watch List <span><i class="fa-solid fa-clapperboard"></i></span>
+    <% end %>
+
+    <div class="ms-auto flex navbar-buttons">
+      <%= link_to "My Lists", lists_path %>
+      <%= link_to "Add List", new_list_path %>
+    </div>
+  </div>
+</nav>

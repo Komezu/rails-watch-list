@@ -10,3 +10,6 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+
+// Global CSS (put last to override other configs that are not mine!)
+@import "config/global";

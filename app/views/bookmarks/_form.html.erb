@@ -1,5 +1,5 @@
 <%= simple_form_for [list, bookmark] do |f| %>
   <%= f.association :movie %>
   <%= f.input :comment %>
-  <%= f.submit "Add Bookmark" %>
+  <%= f.submit "Add Bookmark", class: "btn-submit" %>
 <% end %>

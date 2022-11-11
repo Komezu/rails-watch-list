@@ -1,0 +1,14 @@
+.back-link {
+  width: 600px;
+  text-align: right;
+  display: block;
+  margin: 0 auto;
+
+  a {
+    color: $black;
+  }
+
+  a:hover {
+    color: $vint-brown;
+  }
+}

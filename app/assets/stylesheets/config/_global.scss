@@ -1,0 +1,25 @@
+body {
+  background-color: rgba($vint-yellow, 0.5);
+}
+
+a {
+  text-decoration: none;
+}
+
+h2, h3, h4 {
+  color: $black;
+}
+
+h2 {
+  font-size: 26px;
+}
+
+hr {
+  width: 75%;
+  margin: 25px auto;
+}
+
+.container {
+  width: 1000px;
+  margin: 35px auto 45px auto;
+}
